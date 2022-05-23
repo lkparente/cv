@@ -1,0 +1,118 @@
+<!--colocar html e clicar enter. como temos o plug-in emmet baixado, ele faz um autocomplete com boilerplate-->
+<!DOCTYPE html>
+<!--declara o tipo de arquivo para o browser; nesse caso, HTML 5-->
+<html lang="en" dir="ltr">
+<!--diz para o browser que tudo entre o html será em html-->
+
+<head>
+  <!--tag que mostra pro browser informações que vão estar no tab da webpage-->
+  <meta charset="utf-8">
+  <!--mostra as letras que são aceitas. UTF-8 aceita várias letras e render certo quando tem pessoas de outras línguas acessando seu site-->
+  <!--pesquisar meta no MDN. existem várias outras coisas importantes que podemos usar no site, como o que o site se trata (que aparece no google)-->
+  <title>Lorenzo's Person Site</title>
+  <!--diz o titúlo do site-->
+</head>
+
+<body>
+  <table cellspacing="20">
+    <!--como disse na tabela de experience, cellspacing ou qlq tipo de atributo aqui é ruim pq styling no html é outdated (usar css)-->
+    <tr>
+      <td> <img src="Lorenzo Profile Picture.jpg" alt="Lorenzo's Profile Picture">
+        <!--adciona uma imagem. pode colocar um link ou referenciar uma imagem que esteja na pasta(sempre melhor)-->
+      </td>
+      <td>
+        <h1>Lorenzo Parente</h1>
+        <p><em>Co-founder @ <strong><a href="https://www.instagram.com/usecria_/">Cria</a></strong></em></p>
+        <!-- cria um parágrafo e diz que tudo que estiver dentro será escrito junto. o outro formata em itálico, e é diferente do i pq mantém a enfase/importância do texto (sempre usar "em"). no caso do bold, não usar b e sim strong-->
+        <!-- o "a" serve para vc colocar link em alguma palavra-->
+        <p>Hello folks! I am Lorenzo, an entrepreneur who is currently disrupting the creative economy in Brazil.</p>
+        <a href="contact.html">Contact Me</a>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <!--cria uma barra. podemos adicionar tamanho e cor (ver o MDN)-->
+  <h3><a href="Experience.html">Work Experience</a></h3>
+  <!-- o "a" serve para vc colocar link em alguma palavra. aqui eu criei uma nova página, que é uma file que ta dentro da mesma pasta-->
+  <table cellspacing="10">
+    <!--cria uma tabela. o border ou qualquer outra ferramente de styling não é bom usar, pq é outdated e usamos css para styling-->
+    <thead>
+      <!--cria um row para o header-->
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!--cria um row-->
+        <td>Nov. 2021 - Present</td>
+        <td>Co-founder at Cria</td>
+        <!--cria célula-->
+      </tr>
+      <tr>
+        <td>Oct. 2020 - Nov. 2021</td>
+        <td>Private Equity Analyst at Stone</td>
+      </tr>
+      <tr>
+        <td>Jan. 2020 - Oct. 2021</td>
+        <td>Investment Banking at Bank of America Merrill Lynch</td>
+      </tr>
+      <tr>
+        <td>Jan. 2019 - Jun. 2019</td>
+        <td>Consultant at <a href="https://media-exp1.licdn.com/dms/image/C562DAQFElqPKIpvung/profile-treasury-image-shrink_800_800/0/1601586714924?e=1653858000&v=beta&t=y3RXtIMj-gRVHtivjOKkfWiMPZVyqHX4e70X49Ves_8">Insper Jr.</a></td>
+      </tr>
+      <tr>
+        <td>Jan. 2019 - Jun. 2019</td>
+        <td>Academic Intern (FP&A) at The Janssen Pharmaceutical Companies of Johnson & Johnson</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3><a href="education.html">Education</a></h3>
+  <ul>
+    <li><strong>Insper Instituto de Ensino e Pesquisa</strong></li>
+    <ul>
+      <li><em>Bachelor of Business Administration</em></li>
+      <li><em>2016-2020</em></li>
+    </ul>
+    <li><strong>Escola Nova Lourenço Castanho</strong></li>
+    <ul>
+      <li><em>High School</em></li>
+      <li><em>2013-2015</em></li>
+    </ul>
+  </ul>
+  <hr>
+  <h3><a href="skills.html">Skills</a></h3>
+  <table cellspacing="10">
+    <td>
+      <table>
+        <!--aqui estou criando uma tabela dentro de outra tabela-->
+        <tr>
+          <td>Finance</td>
+          <td>★★★★★</td>
+        </tr>
+        <tr>
+          <td>M&A</td>
+          <td>★★★★★</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>Valuation</td>
+          <td>★★★★★</td>
+        </tr>
+        <tr>
+          <td>HTML(5)</td>
+          <td>★★★</td>
+        </tr>
+    </td>
+  </table>
+  </table>
+
+</body>
+
+</html>
+<!--se formos em packages e atom beautify, ele arruma todo o código para mostrar o que está dentro do que-->
